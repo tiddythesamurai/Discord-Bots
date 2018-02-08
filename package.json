@@ -1,7 +1,7 @@
 {
-  "name": "first-bot",
-  "version": "1.0.0",
-  "description": "Todd's first discord bot",
+  "name": "MemeBot",
+  "version": "1.0.1",
+  "description": "Todd's first discord bot that posts memes",
   "main": "bot.js",
   "author": "Todd Knight",
   "dependencies": {
