@@ -50,13 +50,6 @@ client.on("message", (message) => {
                 case 9:
                 case 10:
                 case 11:
-
-                    message.channel.send("Here's a meme about jeff burger", {
-
-                        file: "C:\\Users\\knigh\\Desktop\\Discord Bots\\First Bot\\Meme Folder\\Meme5.JPG"
-
-                    });
-                    break;
                 case 12:
                 case 13:
                 case 14:
@@ -66,19 +59,19 @@ client.on("message", (message) => {
                 case 18:
                 case 19:
                 case 20:
+
+                    message.channel.send("Here's a meme about jeff burger", {
+
+                        file: "C:\\Users\\knigh\\Desktop\\Discord Bots\\First Bot\\Meme Folder\\Meme5.JPG"
+
+                    });
+                    break;
+
                 case 21:
                 case 22:
                 case 23:
                 case 24:
                 case 25:
-
-                    message.channel.send("Here's a meme about pranks", {
-
-                        file: "C:\\Users\\knigh\\Desktop\\Discord Bots\\First Bot\\Meme Folder\\Meme1.JPG"
-
-                    });
-                    break;
-
                 case 26:
                 case 27:
                 case 28:
@@ -94,6 +87,14 @@ client.on("message", (message) => {
                 case 38:
                 case 39:
                 case 40:
+
+                    message.channel.send("Here's a meme about pranks", {
+
+                        file: "C:\\Users\\knigh\\Desktop\\Discord Bots\\First Bot\\Meme Folder\\Meme1.JPG"
+
+                    });
+                    break;
+
                 case 41:
                 case 42:
                 case 43:
@@ -104,14 +105,6 @@ client.on("message", (message) => {
                 case 48:
                 case 49:
                 case 50:
-
-                    message.channel.send("Here's a meme about word leprosy", {
-
-                        file: "C:\\Users\\knigh\\Desktop\\Discord Bots\\First Bot\\Meme Folder\\Meme2.JPG"
-
-                    });
-                    break;
-
                 case 51:
                 case 52:
                 case 53:
@@ -122,6 +115,14 @@ client.on("message", (message) => {
                 case 58:
                 case 59:
                 case 60:
+
+                    message.channel.send("Here's a meme about word leprosy", {
+
+                        file: "C:\\Users\\knigh\\Desktop\\Discord Bots\\First Bot\\Meme Folder\\Meme2.JPG"
+
+                    });
+                    break;
+
                 case 61:
                 case 62:
                 case 63:
@@ -137,6 +138,11 @@ client.on("message", (message) => {
                 case 73:
                 case 74:
                 case 75:
+                case 76:
+                case 77:
+                case 78:
+                case 79:
+                case 80:
 
                     message.channel.send("Here's a meme a horse", {
 
@@ -145,11 +151,6 @@ client.on("message", (message) => {
                     });
                     break;
 
-                case 76:
-                case 77:
-                case 78:
-                case 79:
-                case 80:
                 case 81:
                 case 82:
                 case 83:
