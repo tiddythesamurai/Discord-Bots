@@ -1,0 +1,13 @@
+{
+  "name": "first-bot",
+  "version": "1.0.0",
+  "description": "Todd's first discord bot",
+  "main": "bot.js",
+  "author": "Todd Knight",
+  "dependencies": {
+    "bufferutil": "^3.0.3",
+    "discord.io": "github:woor/discord.io#gateway_v6",
+    "discord.js": "^11.3.0",
+    "winston": "^2.4.0"
+  }
+}
