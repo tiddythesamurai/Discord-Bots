@@ -13,7 +13,7 @@ function random(min, max){
 }
 
 client.on("ready", () => {
-  console.log(`Logged in as ${client.user.id}`);
+  console.log(`Logged in as ${client.user.username} with id of ${client.user.id}`);
   client.user.setPresence({ game: { name: 'MEMES' }, status: 'online' })
   .catch(console.error);
   /*client.user.setAvatar('./avatar.png')
@@ -22,13 +22,34 @@ client.on("ready", () => {
 
 client.on("message", (message) => {
 
-    if (!message.content.startsWith(config.prefix) || message.author.bot) return;
+    
     const author = message.author.username;
     if (message.content.toLowerCase() === "ur mom gay"){
 
+        message.channel.send("ur dad lesbian");
+
+
+    }else if(message.content.toLowerCase() === "ur dad lesbian" && !message.author.bot){
+
+        message.channel.send("ur granny tranny");
+
+    }else if (message.content.toLowerCase() === "ur granny tranny" && !message.author.bot){
+
+        message.channel.send("ur grandpap a trap");
+
+    }else if (message.content.toLowerCase() === "ur grandpap a trap" && !message.author.bot){
+
+        message.channel.send("ur family tree lgbt");
+
+    }else if (message.content.toLowerCase() === "ur family tree lgbt" && !message.author.bot){
+
         message.channel.send("no u");
 
-    }else if (message.content.toLowerCase() === "diagnosis plz"){
+    }else if(message.content.toLowerCase() === "no u" && !message.author.bot){
+
+        message.channel.send("AAAAAAAAAAAAAAAAAAAAAAAA");
+
+    }else if (message.content.toLowerCase() === "diagnosis plz" && !message.author.bot){
 
         switch(random(0, 100)){
             case 0:
@@ -56,7 +77,7 @@ client.on("message", (message) => {
             case 23:
             case 24:
             case 25:
-                message.channel.send("I diagnose you, " + message.author.username + " with gay.");
+                message.channel.send("I diagnose you, @" + message.author.username + " with gay.");
                 console.log(`${message.author.username} requested a diagnosis in the ${message.channel.name} channel`);
                 break;
             case 26:
@@ -84,7 +105,7 @@ client.on("message", (message) => {
             case 48:
             case 49:
             case 50:
-                message.channel.send("I diagnose you, " + message.author.username + " with ded.");
+                message.channel.send("I diagnose you, @" + message.author.username + " with ded.");
                 console.log(`${message.author.username} requested a diagnosis in the ${message.channel.name} channel`);
                 break;
             case 51:
@@ -112,7 +133,7 @@ client.on("message", (message) => {
             case 73:
             case 74:
             case 75:
-                message.channel.send("I diagnose you with, " + message.author.username + " Hepatitis B and a side of cancer");
+                message.channel.send("I diagnose you with, @" + message.author.username + " Hepatitis B and a side of cancer");
                 console.log(`${message.author.username} requested a diagnosis in the ${message.channel.name} channel`);
                 break;
             case 76:
@@ -139,12 +160,13 @@ client.on("message", (message) => {
             case 98:
             case 99:
             case 100:
-                message.channel.send("I diagnose you with, " + message.author.username + " the thousand year gay.");
+                message.channel.send("I diagnose you with, @" + message.author.username + " the thousand year gay.");
                 console.log(`${message.author.username} requested a diagnosis in the ${message.channel.name} channel`);
                 break;
         }
 
     }
+    if (!message.content.startsWith(config.prefix) || message.author.bot) return;
     const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
 
         
@@ -170,9 +192,9 @@ client.on("message", (message) => {
                 case 8:
                 case 9:
                 case 10:
-                message.channel.send("Here's a meme " + message.author.username, {
+                message.channel.send("Here's a meme @" + message.author.username, {
 
-                        file: config.path + "Meme5.JPG"
+                        file: config.path + "\\Dank Memes\\Meme5.JPG"
 
                     });
                 console.log(`${message.author.username} requested a meme in the ${message.channel.name} channel`);
@@ -187,9 +209,9 @@ client.on("message", (message) => {
                 case 18:
                 case 19:
                 case 20:
-                message.channel.send("Here's a meme " + message.author.username, {
+                message.channel.send("Here's a meme @" + message.author.username, {
 
-                        file: config.path + "Meme8.JPG"
+                        file: config.path + "\\Dank Memes\\Meme8.JPG"
 
                     });
                     console.log(`${message.author.username} requested a meme in the ${message.channel.name} channel`);
@@ -204,9 +226,9 @@ client.on("message", (message) => {
                 case 28:
                 case 29:
                 case 30:
-                message.channel.send("Here's a meme " + message.author.username, {
+                message.channel.send("Here's a meme @" + message.author.username, {
 
-                        file: config.path + "Meme1.JPG"
+                        file: config.path + "\\Dank Memes\\Meme1.JPG"
 
                     });
                 console.log(`${message.author.username} requested a meme in the ${message.channel.name} channel`);
@@ -221,9 +243,9 @@ client.on("message", (message) => {
                 case 38:
                 case 39:
                 case 40:
-                message.channel.send("Here's a meme " + message.author.username, {
+                message.channel.send("Here's a meme @" + message.author.username, {
 
-                        file: config.path + "Meme2.JPG"
+                        file: config.path + "\\Dank Memes\\Meme2.JPG"
 
                     });
                  console.log(`${message.author.username} requested a meme in the ${message.channel.name} channel`);
@@ -238,9 +260,9 @@ client.on("message", (message) => {
                 case 48:
                 case 49:
                 case 50:
-                message.channel.send("Here's a meme " + message.author.username, {
+                message.channel.send("Here's a meme @" + message.author.username, {
 
-                        file: config.path + "Meme3.JPG"
+                        file: config.path + "\\Dank Memes\\Meme3.JPG"
 
                     });
                     console.log(`${message.author.username} requested a meme in the ${message.channel.name} channel`);
@@ -255,9 +277,9 @@ client.on("message", (message) => {
                 case 58:
                 case 59:
                 case 60:
-                message.channel.send("Here's a meme " + message.author.username, {
+                message.channel.send("Here's a meme @" + message.author.username, {
 
-                        file: config.path + "Meme9.JPG"
+                        file: config.path + "\\Dank Memes\\Meme9.JPG"
 
                     });
                     console.log(`${message.author.username} requested a meme in the ${message.channel.name} channel`);
@@ -272,9 +294,9 @@ client.on("message", (message) => {
                 case 68:
                 case 69:
                 case 70:
-                 message.channel.send("Here's a meme " + message.author.username, {
+                 message.channel.send("Here's a meme @" + message.author.username, {
 
-                        file: config.path + "Meme4.JPG"
+                        file: config.path + "\\Dank Memes\\Meme4.JPG"
 
                     });
                     console.log(`${message.author.username} requested a meme in the ${message.channel.name} channel`);
@@ -289,9 +311,9 @@ client.on("message", (message) => {
                 case 78:
                 case 79:
                 case 80:
-                message.channel.send("Here's a meme " + message.author.username, {
+                message.channel.send("Here's a meme @" + message.author.username, {
 
-                        file: config.path + "Meme6.JPG"
+                        file: config.path + "\\Dank Memes\\Meme6.JPG"
 
                     });
                     console.log(`${message.author.username} requested a meme in the ${message.channel.name} channel`);
@@ -306,9 +328,9 @@ client.on("message", (message) => {
                 case 88:
                 case 89:
                 case 90:
-                message.channel.send("Here's a meme " + message.author.username, {
+                message.channel.send("Here's a meme @" + message.author.username, {
 
-                        file: config.path + "Meme10.JPG"
+                        file: config.path + "\\Surreal Memes\\Meme10.JPG"
 
                     });
                     console.log(`${message.author.username} requested a meme in the ${message.channel.name} channel`);
@@ -323,7 +345,7 @@ client.on("message", (message) => {
                 case 98:
                 case 99:
                 case 100:
-                 message.channel.send("Here's a meme " + message.author.username, {
+                 message.channel.send("Here's a meme @" + message.author.username, {
 
                         file: config.path + "Meme7.JPG"
 
