@@ -167,7 +167,7 @@ client.on("message", (message) => {
 
     }
     if (!message.content.startsWith(config.prefix) || message.author.bot) return;
-    const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
+    const args = message.content.toLowerCase().slice(config.prefix.length).trim().split(/ +/g);
 
         
         switch(args[0].toLowerCase()){
@@ -575,7 +575,7 @@ client.on("message", (message) => {
                             message.channel.send("Rank is earned by simply typing messages, you can use the `!rank` command to display your experience and rank.");
                             break;
                         case 'meme':
-                            message.channel.send("MemeBot can give you a random meme if you type `!meme`. Try it out now!");
+                            message.channel.send("MemeBot can give you a random meme if you type `!meme <arg>`. Memes are split into two categories, `dank` and `surreal`. If you just type `!meme`, MemeBot will give you a random one from either.");
                             break;
                         case 'trivia':
                             message.channel.send("Type `trivia play` and optionally a category after that to play trivia. Type `trivia categories` to get a list of all playable categories.");
