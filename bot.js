@@ -560,6 +560,7 @@ client.on("message", (message) => {
                         file: config.path + "\\confused-screaming.jpg"
 
                     });
+                    console.log(`${message.author.usernam} made a syntax error in the ${message.channel.name} channel`);
 
 
             }
@@ -569,13 +570,13 @@ client.on("message", (message) => {
                     switch(args[1]){
 
                         case undefined:
-                            message.channel.send("Type `!help <arg>` for help on certain topics, the current topics for help are `rank`, `meme`, `trivia`.");
+                            message.channel.send("Type `!help <arg>` for help on certain topics, the current topics for help are `rank`, `meme`, and `trivia`.");
                             break;
                         case 'rank':
-                            message.channel.send("Rank is earned by simply typing messages, you can use the `!rank` command to display your experience and rank.");
+                            message.channel.send("Each time you post a message you get a random number of XP between 15 and 25. To avoid flood, you can only gain XP once per minute. You can type `!rank` to get your rank and your level.");
                             break;
                         case 'meme':
-                            message.channel.send("MemeBot can give you a random meme if you type `!meme <arg>`. Memes are split into two categories, `dank` and `surreal`. If you just type `!meme`, MemeBot will give you a random one from either.");
+                            message.channel.send("MemeBot can give you a random meme if you type `!meme <arg>`. Memes are split into two categories, `dank` and `surreal`. If you leave `<arg>` blank, MemeBot will give you a random one from either.");
                             break;
                         case 'trivia':
                             message.channel.send("Type `trivia play` and optionally a category after that to play trivia. Type `trivia categories` to get a list of all playable categories.");
@@ -586,11 +587,15 @@ client.on("message", (message) => {
 
                                 file: config.path + "\\confused-screaming.jpg"
                             });
+                            console.log(`${message.author.usernam} made a syntax error in the ${message.channel.name} channel`);
                             break;
 
 
                     }
                 }
+
+            case 'rank':
+                break;
 
             default:
                 if(args[0]!='ping' && args[0]!='meme'&&args[0]!='help'){
@@ -599,6 +604,7 @@ client.on("message", (message) => {
 
                         file: config.path + "\\confused-screaming.jpg"
                     });
+                    console.log(`${message.author.usernam} made a syntax error in the ${message.channel.name} channel`);
                     break;
                 }
         }
