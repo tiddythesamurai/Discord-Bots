@@ -1,4 +1,4 @@
-# This is the Discord-Bots contribting guideline
+# Discord-Bots Contribting Guideline
 ###### (This is currently a *very* rough draft. More is yet to come)
 
 _**Congratulations!**_ You've decided to contribute to *MemeBot*!
@@ -14,6 +14,8 @@ Then, create a pull request.
 That is all! At this point, the owner (Todd Knight) will either accept or reject your pull request.
 
 Should your request get rejected, please feel free to contact the owner to further collaborate.
+
+*Please note that I currently have two symlinks in the repository to enable Dropbox support, in addition to this, you will notice that you need a file called `config.json` this can **never** and should **never** be pushed to any repository for security reasons. For these reasons, you unfortunately cannot run any changes you decide to make, as it will generate several errors. Please just create a pull request, and I will decide whether or not to merge it.*
 
 # Resources for programming:
 ## Main Discord API pages:
