@@ -457,7 +457,7 @@ client.on("message", (message) => {
                 fs.readFile(config.cd + "\\changelog.txt", 'utf8', (err, data) => {
 
                     if (err) throw err;
-                    if(message.author.id === '303229369017565194') {client.channels.get('410228693605154827').send("@everyone\n" + data);}
+                    if(message.author.id === '303229369017565194') {client.channels.get('509503075074179102').send(data);}
                     else{message.channel.send('Error, illegal use of `!changelog` command. Only the owner is allowed to use it.')}
 
                 });
