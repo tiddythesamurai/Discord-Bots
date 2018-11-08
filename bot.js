@@ -3,6 +3,7 @@ const client = new Discord.Client();
 const config = require('./config.json');
 //const rep = require('./reputation.json');
 const fs = require("fs");
+const package = require("./package.json");
 var chance = 0;
 
 function random(min, max){
@@ -461,6 +462,11 @@ client.on("message", (message) => {
                     else{message.channel.send('Error, illegal use of `!changelog` command. Only the owner is allowed to use it.')}
 
                 });
+                break;
+
+            case 'info':
+
+                message.channel.send('Name: ' + package.name + '\nVersion: ' + package.version + '\nDescription: ' + package.description + '\nAuthor: ' + package.author);
                 break;
 
             default:
