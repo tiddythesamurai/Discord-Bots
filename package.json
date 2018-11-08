@@ -1,7 +1,7 @@
 {
   "name": "MemeBot",
-  "version": "2.1.5",
-  "description": "Todd's first discord bot that posts memes",
+  "version": "2.1.8",
+  "description": "Todd's discord bot that posts memes",
   "main": "bot.js",
   "author": "Todd Knight",
   "dependencies": {

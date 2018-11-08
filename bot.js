@@ -66,7 +66,7 @@ client.on("message", (message) => {
 
                     }else if(rand>=16&&rand<=20){
 
-                        message.channel.send("Here's a meme " +author, {
+                        message.channel.send("Here's a meme " +author, {//nice
 
                             file: config.path + "\\Dank Memes\\Meme4.JPG"
 
@@ -417,7 +417,7 @@ client.on("message", (message) => {
                     });
                     console.log(`${message.author.username} made a syntax error in the ${message.channel.name} channel`);
 
-
+//oh yeah
             }
 
             case 'help':
@@ -425,7 +425,7 @@ client.on("message", (message) => {
                     switch(args[1]){
 
                         case undefined:
-                            message.channel.send("Type `!help [arg]` for help on certain topics, the current topics for help are `rank`, `meme`, and `trivia`.");
+                            message.channel.send("Type `!help [arg]` for help on certain topics, the current topics for help are `rank`, `meme`, `info`, and `trivia`.");
                             break;
                         case 'rank':
                             message.channel.send("Each time you post a message you get a random number of XP between 15 and 25. To avoid flood, you can only gain XP once per minute. You can type `!rank` to get your rank and your level. Type `!levels` to get a link to the server leaderboard.");
@@ -435,6 +435,9 @@ client.on("message", (message) => {
                             break;
                         case 'trivia':
                             message.channel.send("Type `trivia play` and optionally a category after that to play trivia. Type `trivia categories` to get a list of all playable categories.");
+                            break;
+                        case 'info':
+                            message.channel.send('Type `!info` and MemeBot will spit out some of its basic information.');
                             break;
                         default:
                             message.channel.send("Unrecognized argument.", {
@@ -484,31 +487,5 @@ client.on("message", (message) => {
     
 
 });
-
-/*client.on("message", (message) => {
-
-    const msg = message.toString();
-    const points = msg.length();
-    const author = message.author.username;
-
-    var reputation = 0;
-
-    fs.readFile('reputation.json', function(err, buf){
-
-        if(err) throw err;
-        if(data.indexOf(author) >= 0){
-
-            fs.appendFile('reputation.json', '{\n\"' + author + '\"\n\"reputation\" : \"' + reputation + '\"', (err) => {
-
-                if (err) throw err;
-
-            });
-
-        }
-
-    });
-
-});*/
-
 
 client.login(config.token);
